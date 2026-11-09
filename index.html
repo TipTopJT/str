@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#091427" />
+  <meta name="description" content="StructiveAI combines AI research, software engineering, electronics, mechanical design and industrial automation to turn ambitious ideas into real-world systems." />
+  <title>StructiveAI — Research to Reality</title>
+  <style>
+    :root { color-scheme: dark; --bg:#091427; --panel:#112039; --panel2:#152742; --text:#e9f0fa; --muted:#a9bdd2; --line:rgba(200,221,244,.15); --accent:#65dfce; --accent2:#8eabff; --max:1160px; }
+    * {box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65} a{color:inherit;text-decoration:none} a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px} ::selection{background:#55e6c8;color:#091427}
+    .container{width:min(calc(100% - 44px),var(--max));margin:0 auto} .site-header{position:sticky;top:0;z-index:20;background:rgba(9,20,39,.84);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)} .header-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;font-size:1.24rem;font-weight:800;letter-spacing:-.045em}.brand-mark{width:33px;height:33px;border:2px solid var(--accent);border-radius:10px;display:grid;place-items:center;color:var(--accent);font-size:18px;font-weight:900;transform:rotate(-8deg)}nav{display:flex;gap:27px;align-items:center}nav a{font-size:.88rem;color:var(--muted);transition:color .2s}nav a:hover{color:var(--text)}nav .nav-contact{color:var(--accent)}
+    .hero{position:relative;overflow:hidden;padding:125px 0 118px;border-bottom:1px solid var(--line)}.hero:before{content:"";position:absolute;right:-120px;top:-210px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(91,142,245,.17),transparent 65%);pointer-events:none}.hero:after{content:"";position:absolute;left:28%;bottom:-310px;width:580px;height:580px;border-radius:50%;background:radial-gradient(circle,rgba(74,223,196,.10),transparent 68%);pointer-events:none}.hero-content{position:relative;max-width:850px;z-index:1}.eyebrow{text-transform:uppercase;font-size:.77rem;letter-spacing:.19em;font-weight:800;color:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3rem,7vw,6rem);line-height:1.07;letter-spacing:-.07em;margin:25px 0 25px;font-weight:800}.gradient-text{background:linear-gradient(100deg,#7fead9,#8fa9ff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;font-size:1.15rem;color:var(--muted)}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.button{display:inline-flex;justify-content:center;align-items:center;border-radius:10px;padding:13px 22px;border:1px solid var(--line);font-size:.91rem;font-weight:700;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--accent);color:#071d27;border-color:var(--accent)}.button-secondary{background:rgba(255,255,255,.04)}
+    section.content-section{padding:95px 0;border-bottom:1px solid var(--line)}.section-intro{max-width:760px;margin-bottom:43px}.section-intro h2{font-size:clamp(2rem,4vw,3.25rem);line-height:1.15;letter-spacing:-.055em;margin:14px 0 17px}.section-intro p,.wide-copy{font-size:1.06rem;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:linear-gradient(145deg,rgba(23,44,74,.96),rgba(14,29,51,.98));border:1px solid var(--line);border-radius:16px;padding:28px 25px;transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:rgba(101,223,206,.42)}.card-icon{font-size:1.45rem;margin-bottom:19px;color:var(--accent);width:43px;height:43px;border:1px solid rgba(101,223,206,.25);background:rgba(101,223,206,.07);display:grid;place-items:center;border-radius:11px}.card h3{font-size:1.08rem;line-height:1.3;letter-spacing:-.025em;margin-bottom:12px}.card p{font-size:.94rem;color:var(--muted);margin:0}.split{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.split .section-intro{margin:0}.highlight-panel{border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,rgba(101,223,206,.1),rgba(142,171,255,.07));padding:34px}.highlight-panel h3{font-size:1.4rem;letter-spacing:-.035em}.steps{list-style:none;padding:0;margin:0;display:grid;gap:14px}.steps li{display:flex;gap:16px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:13px}.steps li:last-child{border:0;padding:0}.step-num{color:var(--accent);font-weight:800;font-size:.85rem;min-width:28px}.steps span:last-child{color:#d2e0ef}.research-strip{display:flex;gap:24px;align-items:center;justify-content:space-between;padding:32px;border-radius:15px;background:var(--panel);border:1px solid var(--line)}.research-strip p{color:var(--muted);margin-bottom:0}.contact-box{padding:50px;border:1px solid rgba(101,223,206,.25);background:linear-gradient(120deg,rgba(28,61,82,.7),rgba(20,37,72,.7));border-radius:20px}.contact-box h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.05em;line-height:1.2;margin:15px 0}.contact-box p{color:var(--muted);max-width:680px}.placeholder{display:inline-block;padding:11px 15px;border:1px dashed rgba(169,189,210,.55);border-radius:9px;color:#cfdeec;font-size:.92rem;overflow-wrap:anywhere}.footer-inner{padding:35px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:.85rem}.footer-inner a{color:var(--accent)}
+    @media(max-width:850px){nav{gap:14px} .cards{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:32px}.hero{padding:95px 0}section.content-section{padding:72px 0}} @media(max-width:580px){.container{width:min(calc(100% - 34px),var(--max))}.header-inner{align-items:flex-start;flex-direction:column;padding:16px 0 14px;gap:10px}nav{width:100%;overflow-x:auto;gap:17px;white-space:nowrap}nav a{font-size:.81rem}.hero{padding:75px 0 85px}.hero p{font-size:1.02rem}.cards{grid-template-columns:1fr}.card{padding:25px}.research-strip{display:block}.research-strip .button{margin-top:20px}.contact-box{padding:28px 22px}.footer-inner{align-items:flex-start;flex-direction:column}} @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="StructiveAI home"><span class="brand-mark" aria-hidden="true">S</span>StructiveAI</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#approach">Our Approach</a><a href="#research">Research</a><a href="#contact" class="nav-contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div class="eyebrow">Research · Engineering · Innovation</div>
+        <h1>From research<br />to <span class="gradient-text">real-world impact.</span></h1>
+        <p>We connect artificial intelligence, software, electronics, mechanical engineering and industrial automation to design intelligent systems and turn ambitious ideas into working technology.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#expertise">Explore Our Expertise →</a><a class="button button-secondary" href="#contact">Get in Touch</a></div>
+      </div>
+    </section>
+    <section class="content-section" id="about">
+      <div class="container split">
+        <div class="section-intro"><div class="eyebrow">About StructiveAI</div><h2>Technology built on research. Solutions built for reality.</h2></div>
+        <div><p class="wide-copy">StructiveAI is a research-driven engineering and technology company working at the intersection of artificial intelligence, information technology, automation, electronics and mechanical design.</p><p class="wide-copy">We conduct applied research, develop new algorithms and intellectual property, and create solutions that improve the efficiency, reliability and performance of industrial, technological and organizational processes.</p><p class="wide-copy">Our work covers the full development lifecycle—from the initial concept and digital design to prototyping, software and hardware integration, production setup and implementation.</p></div>
+      </div>
+    </section>
+    <section class="content-section" id="expertise">
+      <div class="container"><div class="section-intro"><div class="eyebrow">What We Do</div><h2>Multidisciplinary expertise.</h2><p>Research, software, hardware and manufacturing capabilities under one roof—connecting disciplines to solve practical challenges.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon" aria-hidden="true">✧</div><h3>Artificial Intelligence & Data</h3><p>Machine learning, deep learning, forecasting, intelligent data analysis, optimization and AI integration into real-world workflows.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">⌘</div><h3>Software & Digital Systems</h3><p>Custom software, information systems, digital platforms, data pipelines and connected applications tailored to specific needs.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">◎</div><h3>IoT & Embedded Electronics</h3><p>Electronic circuits, PCB design, embedded devices, connected sensors, monitoring systems and hardware–software integration.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">⚙</div><h3>Automation & Control</h3><p>Intelligent control, industrial automation, process monitoring and improvements to system efficiency, stability and productivity.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">▱</div><h3>Mechanical Design & Prototyping</h3><p>Mechanical components, assemblies, CAD models, engineering documentation, prototype manufacturing and functional testing.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">▦</div><h3>Industrial Engineering & Production</h3><p>Manufacturing process design, production-line setup, equipment integration, workflow optimization and quality-focused implementation.</p></article>
+      </div></div>
+    </section>
+    <section class="content-section" id="approach">
+      <div class="container split"><div class="section-intro"><div class="eyebrow">Our Approach</div><h2>From a drawing to a finished part. From an idea to a working system.</h2><p>We bridge research and implementation through an end-to-end engineering workflow, adapting each stage to the project.</p></div>
+      <div class="highlight-panel"><h3>End-to-end development</h3><ol class="steps"><li><span class="step-num">01</span><span>Research, requirements and concept development</span></li><li><span class="step-num">02</span><span>Engineering design, drawings and digital modeling</span></li><li><span class="step-num">03</span><span>Software, electronics and mechanical development</span></li><li><span class="step-num">04</span><span>Prototyping, manufacturing and production-line setup</span></li><li><span class="step-num">05</span><span>Testing, integration, optimization and deployment</span></li></ol></div></div>
+    </section>
+    <section class="content-section" id="research">
+      <div class="container"><div class="section-intro"><div class="eyebrow">Research & Innovation</div><h2>Creating knowledge. Turning it into value.</h2><p>Scientific research is a core part of how we work. We investigate new methodologies, develop original technologies and intellectual property, and pursue their practical application and commercialization.</p></div><div class="research-strip"><div><h3>Research with a practical purpose</h3><p>Scientific publications, R&D collaborations, innovative projects and knowledge exchange with universities, research institutions and industry partners.</p></div><a class="button button-secondary" href="#contact">Discuss Collaboration →</a></div></div>
+    </section>
+    <section class="content-section" id="contact">
+      <div class="container"><div class="contact-box"><div class="eyebrow">Contact</div><h2>Let’s build something meaningful.</h2><p>Interested in a research partnership, an engineering solution or a technology development project? We welcome new collaborations.</p>
+      <!-- EDIT CONTACT DETAILS BELOW: Replace the placeholder with your company email, phone, address or links. Example: <a class="button button-primary" href="mailto:hello@example.com">hello@example.com</a> -->
+      <span class="placeholder">Contact details coming soon — edit this section in index.html</span>
+      </div></div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year">2026</span> StructiveAI. All rights reserved.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
